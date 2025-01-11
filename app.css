@@ -1,0 +1,13 @@
+:root{
+    --bg-white: #FFFFFF;
+    --icon-color: #0F1419;
+    --blue-color: #1A8CD8;
+    --purple-color:#6F4EA9;
+    --grey-btn: rgb(135,137,140);
+    --faded-grey-text: #536471;
+    --black-btn-bg: #272C30;
+}
+
+body{
+    font-family: "Inter Tight", serif;
+}
