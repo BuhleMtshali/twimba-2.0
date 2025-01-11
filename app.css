@@ -10,4 +10,41 @@
 
 body{
     font-family: "Inter Tight", serif;
+   height: 100%;
+   margin: 0;
+   position: relative;
+}
+
+nav{
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: cadetblue;
+}
+
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#logo-text{
+    font-size: 35px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 0;
+}
+
+main{
+    height: 100%;
+    margin-left: 240px;
+    background-color: #6F4EA9;
+    overflow-x: hidden;
+}
+h1{
+    margin: 0;
 }

@@ -1,0 +1,46 @@
+/* this is for mobile phones/smaller screens */
+
+@media screen and (max-width: 576px) {
+    nav{
+        width: 100%;
+       margin: 0 auto;
+       overflow: hidden;
+       display: flex;
+       position: fixed;
+       bottom: 0;
+       top: auto;
+       height: 50px;
+    }
+    .nav-text{
+        display: none;
+    }
+    main{
+       margin-left: 0;
+    }
+}
+
+/* this is for tablets and phones with larger screens */
+@media screen and (min-width: 577px) and (max-width: 768px){
+    nav{
+        width: 100px;
+    }
+    .nav-text{
+        display: none;
+    }
+    main{
+        margin-left: 100px;
+    }
+}
+
+/* this is for laptops, tablets, small desktops */
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    nav{
+       width: 120px;
+    }
+    .nav-text{
+        display: none;
+    }
+    main{
+        margin-left: 120px;
+    }
+}
