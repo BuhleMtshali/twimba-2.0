@@ -13,6 +13,7 @@ body{
    height: 100%;
    margin: 0;
    position: relative;
+   user-select: none;
 }
 
 nav{
@@ -38,6 +39,16 @@ nav{
     cursor: pointer;
     margin: 0;
 }
+
+span.icons{
+    font-size: 2rem;
+}
+
+
+.nav-text{
+    font-size: 1.8rem;
+}
+
 
 main{
     height: 100%;
