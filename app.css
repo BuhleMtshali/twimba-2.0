@@ -23,7 +23,7 @@ body{
 
 nav{
     height: 100%;
-    width: 250px;
+    width: 280px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -139,7 +139,7 @@ span.icons{
 
 main{
     height: 100%;
-    margin-left: 250px;
+    margin-left: 280px;
     overflow-x: hidden;
     padding-left: 10px;
     display: flex;
@@ -147,9 +147,10 @@ main{
 }
 
 .feed-container{
-    flex-grow: 2;
+    flex-grow: 1;
     border: 2px solid #F7F7F7;
     width: 550px;
+   
     
 }
 
@@ -236,6 +237,7 @@ textarea{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    padding: 12px;
     
 
 }
@@ -257,6 +259,7 @@ textarea{
     line-height: 1.6;
     font-size: 17px;
     color: var(--icon-color);
+    margin:10px 0;
 }
 
 .username{
@@ -284,9 +287,36 @@ textarea{
     font-weight: 400;
 }
 
+.user-infor-posts img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reactions{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.reaction-container{
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--faded-grey-text);
+    display: flex;
+    align-items: center;
+}
+
+.reaction-container p{
+    margin: 0;
+    padding-left: 7px;
+}
 
 .trending-container{
     background-color: chartreuse;
-    flex-grow: 1;
-    width: 350px;
+    width: 450px;
 }
