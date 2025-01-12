@@ -18,6 +18,7 @@ body{
    margin: 0;
    position: relative;
    user-select: none;
+   
 }
 
 nav{
@@ -148,7 +149,7 @@ main{
 .feed-container{
     flex-grow: 2;
     border: 2px solid #F7F7F7;
-    width: 598px;
+    width: 550px;
     
 }
 
@@ -253,18 +254,37 @@ textarea{
 
 .caption{
     word-wrap: break-word;
+    line-height: 1.6;
+    font-size: 17px;
+    color: var(--icon-color);
 }
 
 .username{
     display: flex;
     font-size: 1.4rem;
     margin: 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
+
+.username:hover{
+    text-decoration: underline;
+}
+
 
 .verified{
     color: var(--blue-color);
     padding: 0 5px;
 }
+
+.handle-user{
+    font-size:1.2rem ;
+    color: var(--faded-grey-text);
+    font-weight: 400;
+}
+
+
 .trending-container{
     background-color: chartreuse;
     flex-grow: 1;
