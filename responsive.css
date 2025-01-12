@@ -11,10 +11,9 @@
        bottom: 0;
        top: auto;
        height: 50px;
-       background-color: rgb(135,137,140);
+       background-color: #e9ecef;
     }
 
-    
     .nav-text{
         display: none;
     }
@@ -28,10 +27,16 @@
     }
     main{
        margin-left: 0;
+       padding: 0;
     }
     .hidden{
         display: none;
     }
+
+    .trending-container{
+        display: none;
+    }
+    
 }
 
 /* this is for tablets and phones with larger screens */
