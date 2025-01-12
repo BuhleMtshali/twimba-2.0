@@ -121,6 +121,9 @@
         position: relative;
         right: -110px;
     }
+    .trending-container{
+        display: none;
+    }
 }
 
 /* this is for laptops, tablets, small desktops */

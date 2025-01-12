@@ -98,7 +98,7 @@ span.icons{
 
 .bold{
     margin: 0;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--icon-color);
 }
@@ -109,10 +109,10 @@ span.icons{
 }
 .circle{
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     text-align: center;
-   padding: 12px;
+   padding: 10px;
     background-color: var(--purple-color);
    margin: 0;
    color: var(--bg-white);
@@ -148,6 +148,7 @@ main{
 .feed-container{
     flex-grow: 2;
     border: 2px solid #F7F7F7;
+    width: 598px;
     
 }
 
@@ -232,26 +233,40 @@ textarea{
 
 .render-div{
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.user-pic{
+    padding-right: 20px;
 }
 .user-pic img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border: none;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
 }
 
+.caption{
+    word-wrap: break-word;
+}
 
 .username{
     display: flex;
     font-size: 1.4rem;
+    margin: 0;
 }
 
 .verified{
     color: var(--blue-color);
+    padding: 0 5px;
 }
 .trending-container{
     background-color: chartreuse;
     flex-grow: 1;
+    width: 350px;
 }
