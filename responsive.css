@@ -6,16 +6,31 @@
        margin: 0 auto;
        overflow: hidden;
        display: flex;
+       justify-content: space-around;
        position: fixed;
        bottom: 0;
        top: auto;
        height: 50px;
+       background-color: rgb(135,137,140);
     }
+
+    
     .nav-text{
         display: none;
     }
+
+    .nav-btn{
+        display: none;
+    }
+
+    #post-nav{
+        display: block;
+    }
     main{
        margin-left: 0;
+    }
+    .hidden{
+        display: none;
     }
 }
 
@@ -23,12 +38,48 @@
 @media screen and (min-width: 577px) and (max-width: 768px){
     nav{
         width: 100px;
+        position: fixed;
+        right: 0;
+        left: auto;
+        top: 0;
+        
     }
     .nav-text{
         display: none;
     }
     main{
-        margin-left: 100px;
+        margin-right: 100px;
+        margin-left: 0;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    span.icons{
+        font-size: 3rem;
+    }
+
+    #img-logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+
+    #post-nav{
+        display: block;
+    }
+
+    .profile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text{
+        display: none;
     }
 }
 
@@ -42,5 +93,34 @@
     }
     main{
         margin-left: 120px;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 19px;
+    }
+    span.icons{
+        font-size: 3rem;
+    }
+    #img-logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+
+    #post-nav{
+        display: block;
+    }
+
+    .profile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text{
+        display: none;
     }
 }

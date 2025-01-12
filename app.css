@@ -18,20 +18,25 @@ body{
 
 nav{
     height: 100%;
-    width: 240px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    background-color: cadetblue;
+    padding-left: 10px;
+    
 }
 
-
+.active{
+    font-weight: bolder;
+}
 .nav-container{
     display: flex;
     align-items: center;
     justify-content: left;
+    padding-top: 8px;
+    cursor: pointer;
 }
 #logo-text{
     font-size: 35px;
@@ -47,14 +52,74 @@ span.icons{
 
 .nav-text{
     font-size: 1.8rem;
+    margin: 8px 0;
+    padding-left: 15px;
+}
+
+.logo{
+    margin-bottom: 10px;
 }
 
 
+.nav-btn{
+    width: 95%;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    background-color: var(--black-btn-bg);
+    color: var(--bg-white);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover{
+    background-color: var(--bg-white);
+    color: var(--icon-color);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 25px;
+}
+
+.bold{
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--icon-color);
+}
+.handle{
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--faded-grey-text);
+}
+.circle{
+    border-radius: 50%;
+   padding: 14px;
+    background-color: var(--purple-color);
+   margin: 0;
+   color: var(--bg-white);
+   font-size: 2rem;
+}
+
+
+.text{
+    margin-left: 15px;
+}
+
+
+#post-nav{
+    display: none;
+}
+
 main{
     height: 100%;
-    margin-left: 240px;
-    background-color: #6F4EA9;
+    margin-left: 250px;
     overflow-x: hidden;
+    padding-left: 10px;
 }
 h1{
     margin: 0;
