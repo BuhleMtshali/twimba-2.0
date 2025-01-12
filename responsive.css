@@ -116,6 +116,11 @@
     .text{
         display: none;
     }
+
+    .feed-btn{
+        position: relative;
+        right: -110px;
+    }
 }
 
 /* this is for laptops, tablets, small desktops */
@@ -160,5 +165,9 @@
     }
     .trending-container{
         display: none;
+    }
+    .feed-btn{
+        position: relative;
+        right: -110px;
     }
 }

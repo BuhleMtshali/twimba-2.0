@@ -39,7 +39,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-top: 8px;
+    padding-top: 16px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -60,9 +60,10 @@ span.icons{
 
 
 .nav-text{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 8px 0;
     padding-left: 15px;
+   
 }
 
 .logo{
@@ -175,7 +176,7 @@ main{
 .textarea-container{
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    margin: 35px 0;
 }
 
 .text-icons{
@@ -186,6 +187,7 @@ main{
     color: var(--blue-color);
     font-size: 40px;
     padding: 10px;
+    cursor: pointer;
 }
 textarea{
     resize: none;
@@ -214,6 +216,41 @@ textarea{
     font-weight: bold;
 }
 
+.show-more{
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid #F7F7F7;
+    border-bottom: 5px solid #F7F7F7;
+
+}
+
+.show-more h2{
+    color: var(--blue-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.render-div{
+    margin-top: 20px;
+}
+.user-pic img{
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.username{
+    display: flex;
+    font-size: 1.4rem;
+}
+
+.verified{
+    color: var(--blue-color);
+}
 .trending-container{
     background-color: chartreuse;
     flex-grow: 1;
