@@ -8,6 +8,10 @@
     --black-btn-bg: #272C30;
 }
 
+*:focus{
+    outline: none;
+}
+
 body{
     font-family: "Inter Tight", serif;
    height: 100%;
@@ -104,7 +108,10 @@ span.icons{
 }
 .circle{
     border-radius: 50%;
-   padding: 14px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+   padding: 12px;
     background-color: var(--purple-color);
    margin: 0;
    color: var(--bg-white);
@@ -121,6 +128,11 @@ span.icons{
     display: none;
 }
 
+.top{
+    display: none;
+}
+
+
 /* begining of main style */
 
 main{
@@ -134,11 +146,16 @@ main{
 
 .feed-container{
     flex-grow: 2;
+    border: 2px solid #F7F7F7;
+    
 }
 
 .for-you-text{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15px;
+    position: sticky;
+    top: 0;
 }
 
 .underline{
@@ -155,6 +172,47 @@ main{
     cursor: pointer;
 }
 
+.textarea-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.text-icons{
+    padding-left: 15px;
+    position: relative;
+}
+.blue-icons{
+    color: var(--blue-color);
+    font-size: 40px;
+    padding: 10px;
+}
+textarea{
+    resize: none;
+    width: 600px;
+    border: none;
+    height: 65px;
+    display: block;
+    overflow: hidden;
+}
+
+::placeholder{
+    font-size: 1.8rem;
+    color: #A4ADB4;
+}
+
+.feed-btn{
+    position: relative;
+    right: -250px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 22px;
+    font-size: 1.3rem;
+    background-color: rgb(135, 137, 140);
+    color: var(--bg-white);
+    cursor: pointer;
+    font-weight: bold;
+}
 
 .trending-container{
     background-color: chartreuse;

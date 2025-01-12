@@ -36,6 +36,36 @@
     .trending-container{
         display: none;
     }
+
+    .textarea-container{
+        display: none;
+    }
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content:left;
+        padding-left: 20px;
+        margin: 15px 0;
+    }
+    
+    .top-text{
+        font-size: 1.5rem;
+       padding-left: 10px;
+      margin: 5px 0;
+    }
+    .circle-two{
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        background-color: var(--purple-color);
+        font-size: 1.5rem;
+        color: var(--bg-white);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
 
@@ -89,7 +119,7 @@
 }
 
 /* this is for laptops, tablets, small desktops */
-@media screen and (min-width: 769px) and (max-width: 1279px){
+@media screen and (min-width: 769px) and (max-width: 1290px){
     nav{
        width: 120px;
     }
@@ -126,6 +156,9 @@
     }
 
     .text{
+        display: none;
+    }
+    .trending-container{
         display: none;
     }
 }
