@@ -18,18 +18,20 @@ body{
    margin: 0;
    position: relative;
    user-select: none;
+  
    
 }
 
 nav{
     height: 100%;
-    width: 280px;
+    width: 300px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
     padding-left: 10px;
+    padding: 15px;
     
 }
 
@@ -142,18 +144,21 @@ span.icons{
 
 main{
     height: 100%;
-    margin-left: 280px;
+    margin-left: 300px;
     overflow-x: hidden;
     padding-left: 10px;
     display: flex;
     justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: 2fr 2fr; */
 }
 
 .feed-container{
     flex-grow: 1;
     border: 2px solid #F7F7F7;
     width: 550px;
-   
+   max-width: 100%;
+   position: relative;
     
 }
 
@@ -163,6 +168,8 @@ main{
     margin-bottom: 15px;
     position: sticky;
     top: 0;
+    background-color: #F7F7F7;
+    padding: 15px;
 }
 
 .underline{
@@ -204,7 +211,7 @@ textarea{
     overflow: hidden;
 }
 
-::placeholder{
+#input::placeholder{
     font-size: 1.8rem;
     color: #A4ADB4;
 }
@@ -331,7 +338,30 @@ textarea{
 .green-reaction:hover{
     color: #008000;
 }
+
+/* last style for last container */
 .trending-container{
-    background-color: chartreuse;
-    width: 450px;
+    width: 570px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+   
+}
+
+
+input[type=search]{
+    width: 80%;
+    padding: 17px 16px;
+    border: 1px solid #536471;
+    border-radius: 24px;
+    box-sizing: border-box;
+    background-image: url('assets/search-regular-36\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: 11px ;
+}
+
+input[type=search]::placeholder{
+padding-left: 30px;
+font-size: 19px;
 }
