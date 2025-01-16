@@ -234,11 +234,11 @@ textarea{
 }
 
 .render-div{
-    margin-top: 20px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     padding: 12px;
-    
+    width: 650px;
 
 }
 
@@ -316,6 +316,17 @@ textarea{
     padding-left: 7px;
 }
 
+.blue-reaction:hover{
+    color: var(--blue-color);
+}
+
+.pink-reaction:hover{
+    color: rgb(249, 24, 128);
+}
+
+.green-reaction:hover{
+    color: #008000;
+}
 .trending-container{
     background-color: chartreuse;
     width: 450px;
