@@ -68,21 +68,31 @@
     }
 
     .render-div{
-        width: 500px;
-        padding: 0;
+        width: 100%;
+        padding: 10px;
+        height:100%;
     }
 
     .user-infor-posts{
-        width: 100%;
+        width: 80%;
     }
     
     .user-pic{
         padding-right: 5px;
+        
     }
 
     .caption{
         word-wrap: break-word;
+        font-size: 14px;
     }
+
+    .user-pic img{
+        width: 30px;
+        height: 30px;
+    }
+
+    
     /* .user-infor-posts img{
         width: 300px;
     } */
