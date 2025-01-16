@@ -66,7 +66,26 @@
         justify-content: center;
         align-items: center;
     }
+
+    .render-div{
+        width: 500px;
+        padding: 0;
+    }
+
+    .user-infor-posts{
+        width: 100%;
+    }
     
+    .user-pic{
+        padding-right: 5px;
+    }
+
+    .caption{
+        word-wrap: break-word;
+    }
+    /* .user-infor-posts img{
+        width: 300px;
+    } */
 }
 
 /* this is for tablets and phones with larger screens */
@@ -129,13 +148,13 @@
 /* this is for laptops, tablets, small desktops */
 @media screen and (min-width: 769px) and (max-width: 1290px){
     nav{
-       width: 120px;
+       width: 100px;
     }
     .nav-text{
         display: none;
     }
     main{
-        margin-left: 120px;
+        margin-left: 100px;
     }
     .nav-container{
         display: flex;
