@@ -175,7 +175,7 @@
 }
 
 /* this is for laptops, tablets, small desktops */
-@media screen and (min-width: 769px) and (max-width: 1549px){
+@media screen and (min-width: 769px) and (max-width: 1290px){
     nav{
        width: 100px;
        padding: 5px;
