@@ -462,3 +462,44 @@ font-size: 19px;
     font-weight: bold;
     font-size: 20px;
 }
+
+.follow-div{
+    border: 2px solid #F7F7F7;
+    padding: 15px;
+    border-radius: 27px;
+    margin-top: 15px;
+   
+}
+
+.follow-img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+   
+}
+
+.follow{
+    padding: 8px 15px;
+    background-color: var(--icon-color);
+    color: var(--bg-white);
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 17px;
+    border: none;
+    cursor: pointer;
+   
+}
+.follow-div h2{
+    margin: 10px 0;
+}
+.follow-inner{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.follow-text{
+    padding-right: 35px;
+    padding-left: 10px;
+}
