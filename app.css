@@ -376,6 +376,7 @@ font-size: 19px;
    border: 2px solid #F7F7F7;
    padding: 15px;
    border-radius: 27px;
+   margin-top: 15px;
 }
 
 .premium-div h1{
@@ -402,6 +403,7 @@ font-size: 19px;
     border: 2px solid #F7F7F7;
    padding: 15px;
    border-radius: 27px;
+   margin-top: 15px;
 }
 
 .whats-happening-div h1{
@@ -429,4 +431,34 @@ font-size: 19px;
     font-weight: normal;
     color: #536471;
     font-size: 18px;
+}
+.inner-trending{
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.inner-trending:hover{
+    background-color:#A4ADB4;
+}
+.inner-trending p{
+    margin: 10px 0;
+}
+
+.grey-inner{
+    color: #536471;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.bold-inner{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.blue-trending{
+    color: var(--blue-color);
+    font-weight: bold;
+    font-size: 20px;
 }
