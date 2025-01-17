@@ -167,9 +167,11 @@ main{
     justify-content: space-around;
     margin-bottom: 15px;
     position: sticky;
+    height: 50px;
     top: 0;
     background-color: #F7F7F7;
     padding: 15px;
+    
 }
 
 .underline{
@@ -507,5 +509,10 @@ small{
     color: #A4ADB4;
     padding: 8px;
     cursor: pointer;
-    
+    transition: all 0.3s ease-in-out;
+
+}
+small:hover{
+   text-decoration: underline;
+   font-weight: bold;
 }
