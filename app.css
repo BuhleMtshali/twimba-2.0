@@ -375,10 +375,12 @@ font-size: 19px;
 .premium-div{
    border: 2px solid #F7F7F7;
    padding: 15px;
+   border-radius: 27px;
 }
 
 .premium-div h1{
    margin: 0;
+   
 }
 .premium-text{
     font-size: 16px;
@@ -390,8 +392,41 @@ font-size: 19px;
     font-weight: bold;
     border: none;
     font-size: 17px;
-    padding: 8px 12px;
-    border-radius: 16px;
+    padding: 12px 20px;
+    border-radius: 25px;
     cursor: pointer;
     
+}
+
+.whats-happening-div{
+    border: 2px solid #F7F7F7;
+   padding: 15px;
+   border-radius: 27px;
+}
+
+.whats-happening-div h1{
+    margin-top: 0;
+}
+.sneak-peak-image{
+    display: flex;
+    
+}
+
+.sneak-peak-image h2{
+    margin-top: 0;
+    padding-left: 10px;
+}
+
+.sneak-peak-img{
+    width: 80px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 11px;
+}
+
+.grey-text{
+    font-weight: normal;
+    color: #536471;
+    font-size: 18px;
 }
