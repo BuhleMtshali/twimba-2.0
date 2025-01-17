@@ -503,3 +503,9 @@ font-size: 19px;
     padding-right: 35px;
     padding-left: 10px;
 }
+small{
+    color: #A4ADB4;
+    padding: 8px;
+    cursor: pointer;
+    
+}
