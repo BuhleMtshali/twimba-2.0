@@ -16,7 +16,7 @@ function searchApi(query){
           section: 'top',
           min_retweets: '1',
           min_likes: '1',
-          limit: '20',
+          limit: '50',
           start_date: '2022-01-01',
           language: 'en'
         },
@@ -41,6 +41,20 @@ function renderSearchResults(results){
     postContainer.innerHTML = ''
     console.log(results.results)
     results.results.forEach((tweet) => {
+        let mediaHtml = '';
+        if(tweet.video_url && tweet.video_url.length > 0){
+            mediaHtml = `
+                        <video controls autoplay muted>
+                        <source src="${tweet.video_url[1].url}" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        `;
+        } else if(tweet.media_url && tweet.media_url.length > 0) {
+            // If there's no video, check for an image
+            mediaHtml = `<img src="${tweet.media_url[0]}" alt="post image">`;
+        }
+
+
         let  html = `  
                     <div class="inner-render">
                     <div class="user-pic">
@@ -51,7 +65,7 @@ function renderSearchResults(results){
                     <div class="user-infor-posts" id="postContainer">
                     <p class="username">${tweet.user.name} <span class="material-icons verified">verified</span> <span class="handle-user">${tweet.user.username}</span></p>
                     <p class="caption">${tweet.text}</p>
-                    <img src="${tweet.media_url && tweet.media_url.length > 0 ? tweet.media_url[0] : ''}" alt="post image">
+                    ${mediaHtml}
                     <div class="reactions">
                     <div class="reaction-container blue-reaction">
                     <i class="fa-regular fa-comment"></i>
@@ -108,7 +122,7 @@ function refreshData(){
           section: 'top',
           min_retweets: '1',
           min_likes: '1',
-          limit: '20',
+          limit: '50',
           start_date: '2022-01-01',
           language: 'en'
         },
@@ -132,6 +146,21 @@ function renderFeed(feed){
     postContainer.innerHTML = '';
     console.log(feed.results)
     feed.results.forEach((tweet) => {
+        // checking for video/photo
+        let mediaHtml = '';
+        if(tweet.video_url && tweet.video_url.length > 0){
+            mediaHtml = `
+                        <video controls autoplay muted>
+                        <source src="${tweet.video_url[1].url}" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        `;
+        } else if(tweet.media_url && tweet.media_url.length > 0) {
+            // If there's no video, check for an image
+            mediaHtml = `<img src="${tweet.media_url[0]}" alt="post image">`;
+        }
+
+
         let  html = `  
                     <div class="inner-render">
                     <div class="user-pic">
@@ -142,7 +171,7 @@ function renderFeed(feed){
                     <div class="user-infor-posts" id="postContainer">
                     <p class="username">${tweet.user.name} <span class="material-icons verified">verified</span> <span class="handle-user">${tweet.user.username}</span></p>
                     <p class="caption">${tweet.text}</p>
-                    <img src="${tweet.media_url && tweet.media_url.length > 0 ? tweet.media_url[0] : ''}" alt="post image">
+                    ${mediaHtml}
                     <div class="reactions">
                     <div class="reaction-container blue-reaction">
                     <i class="fa-regular fa-comment"></i>
