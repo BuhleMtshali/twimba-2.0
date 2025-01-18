@@ -35,48 +35,54 @@ function searchApi(query){
 }
 
 function renderSearchResults(results){
-    let postContainer = document.getElementById('postContainer');
+    let postContainer = document.getElementById('render-div');
     postContainer.innerHTML = ''
     console.log(results.results)
     results.results.forEach((tweet) => {
-        let  html = `   
-            <p class="username">${tweet.user.name} <span class="material-icons verified">verified</span> <span class="handle-user">${tweet.user.username}
-            </span></p>
-            <p class="caption">${tweet.text}</p>
-            <img src= ${tweet.media_url ? tweet.media_url[0] : ''} alt="post image" >
-            <div class="reactions">
-            <div class="reaction-container blue-reaction">
-            <i class="fa-regular fa-comment"></i>
-            <p class="number">${tweet.reply_count }</p>
-            </div>
-            <!-- end of reaction container -->
-            <div class="reaction-container green-reaction">
-            <i class="fa-solid fa-retweet"></i>
-            <p class="number">${tweet.retweet_count }</p>
-            </div>
-            <!-- end of reaction container -->
-            <div class="reaction-container pink-reaction">
-            <i class="fa-regular fa-heart"></i>
-            <p class="number">${tweet.quoute_count}</p>
-            </div>
-            <!-- end of reaction container -->
-            // <div class="reaction-container blue-reaction">
-            // <i class="fa-solid fa-chart-simple"></i>
-            // <p class="number">181k</p>
-            // </div>
-            <!-- end of reaction container -++->
-            <div class="reaction-container blue-reaction">
-            <i class="fa-regular fa-bookmark"></i>
-            <p class="number">${tweet.bookmark_count}</p>
-            </div>
-            <!-- end of reaction container -->
-            <div class="reaction-container blue-reaction">
-            <i class="fa-solid fa-share-nodes"></i>
-            </div>
-            <!-- end of reaction container -->
-            </div>
-            <!-- end of reactions div -->
-            </div>`;
+        let  html = `  
+                    <div class="inner-render">
+                    <div class="user-pic">
+                    <img src=${tweet.user.profile_pic_url} alt="user profile picture">
+                    </div>
+                    <!-- end of user pic -->
+                    <div class="photo">
+                    <div class="user-infor-posts" id="postContainer">
+                    <p class="username">${tweet.user.name} <span class="material-icons verified">verified</span> <span class="handle-user">${tweet.user.username}</span></p>
+                    <p class="caption">${tweet.text}</p>
+                    <img src="${tweet.media_url && tweet.media_url.length > 0 ? tweet.media_url[0] : ''}" alt="post image">
+                    <div class="reactions">
+                    <div class="reaction-container blue-reaction">
+                    <i class="fa-regular fa-comment"></i>
+                    <p class="number">${tweet.reply_count ? tweet.reply_count : 0}</p>
+                    </div>
+                    <!-- end of reaction container -->
+                    <div class="reaction-container green-reaction">
+                    <i class="fa-solid fa-retweet"></i>
+                    <p class="number">${tweet.retweet_count ? tweet.retweet_count : 0}</p>
+                    </div>
+                    <!-- end of reaction container -->
+                    <div class="reaction-container pink-reaction">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="number">${tweet.favorite_count ? tweet.favorite_count : 0}</p>
+                    </div>
+                    <!-- end of reaction container -->
+                    <div class="reaction-container blue-reaction">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <p class="number">${tweet.bookmark_count ? tweet.bookmark_count : 0}</p>
+                    </div>
+                    <!-- end of reaction container -->
+                    <div class="reaction-container blue-reaction">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <!-- end of reaction container -->
+                    </div>
+                    <!-- end of reactions div -->
+                    </div>
+                    <!-- end of user-infor-posts -->
+                    </div>
+                    </div>
+                    </div>
+                    `
 
             postContainer.innerHTML += html;
     })
