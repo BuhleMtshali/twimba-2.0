@@ -16,7 +16,7 @@ function searchApi(query){
           section: 'top',
           min_retweets: '1',
           min_likes: '1',
-          limit: '5',
+          limit: '20',
           start_date: '2022-01-01',
           language: 'en'
         },

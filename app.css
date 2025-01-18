@@ -305,7 +305,7 @@ textarea{
     font-weight: 400;
 }
 
-#postContainer{
+.inner-render{
     padding: 15px 0;
 }
 
@@ -371,12 +371,15 @@ input[type=search]{
     width: 80%;
     padding: 17px 16px;
     border: 1px solid #536471;
-    border-radius: 24px;
+    border-radius: 27px;
     box-sizing: border-box;
     /* background-image: url('assets/search-regular-36\ \(1\).png');
     background-repeat: no-repeat;
     background-position: 10px ; */
     line-height: 16px;
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--icon-color);
 }
 
 input[type=search]::placeholder{
