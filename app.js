@@ -8,11 +8,11 @@ searchElement.addEventListener('keypress', (event) => {
 })
 
 //the above function calls the bellow function
-function searchApi(){
+function searchApi(query){
     const options = {
         method: 'GET',
         params: {
-          query: searchElement.value,
+          query: query,
           section: 'top',
           min_retweets: '1',
           min_likes: '1',
@@ -30,9 +30,58 @@ function searchApi(){
 
       axios.get(url, options).then(response => renderSearchResults(response.data))
       .catch(error => console.error('Error fetching search results', error));
-      
+    
+  
 }
 
-function renderSearchResults(data){
-    console.log(data.results)
+function renderSearchResults(results){
+    let postContainer = document.getElementById('postContainer');
+    postContainer.innerHTML = ''
+    console.log(results.results)
+    results.results.forEach((tweet) => {
+        let  html = `   
+            <p class="username">${tweet.user.name} <span class="material-icons verified">verified</span> <span class="handle-user">${tweet.user.username}
+            </span></p>
+            <p class="caption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <img src= ${tweet.media_url ? tweet.media_url[0] : ''} alt="post image">
+            <div class="reactions">
+            <div class="reaction-container blue-reaction">
+            <i class="fa-regular fa-comment"></i>
+            <p class="number">${tweet.reply_count }</p>
+            </div>
+            <!-- end of reaction container -->
+            <div class="reaction-container green-reaction">
+            <i class="fa-solid fa-retweet"></i>
+            <p class="number">${tweet.retweet_count }</p>
+            </div>
+            <!-- end of reaction container -->
+            <div class="reaction-container pink-reaction">
+            <i class="fa-regular fa-heart"></i>
+            <p class="number">${tweet.quoute_count}</p>
+            </div>
+            <!-- end of reaction container -->
+            // <div class="reaction-container blue-reaction">
+            // <i class="fa-solid fa-chart-simple"></i>
+            // <p class="number">181k</p>
+            // </div>
+            <!-- end of reaction container -++->
+            <div class="reaction-container blue-reaction">
+            <i class="fa-regular fa-bookmark"></i>
+            <p class="number">${tweet.bookmark_count}</p>
+            </div>
+            <!-- end of reaction container -->
+            <div class="reaction-container blue-reaction">
+            <i class="fa-solid fa-share-nodes"></i>
+            </div>
+            <!-- end of reaction container -->
+            </div>
+            <!-- end of reactions div -->
+            </div>`;
+
+            postContainer.innerHTML += html;
+    })
+    
+       
+        
+   
 }
