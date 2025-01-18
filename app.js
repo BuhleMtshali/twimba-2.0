@@ -42,8 +42,8 @@ function renderSearchResults(results){
         let  html = `   
             <p class="username">${tweet.user.name} <span class="material-icons verified">verified</span> <span class="handle-user">${tweet.user.username}
             </span></p>
-            <p class="caption">Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <img src= ${tweet.media_url ? tweet.media_url[0] : ''} alt="post image">
+            <p class="caption">${tweet.text}</p>
+            <img src= ${tweet.media_url ? tweet.media_url[0] : ''} alt="post image" >
             <div class="reactions">
             <div class="reaction-container blue-reaction">
             <i class="fa-regular fa-comment"></i>

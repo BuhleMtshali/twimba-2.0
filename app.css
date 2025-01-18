@@ -299,6 +299,10 @@ textarea{
     font-weight: 400;
 }
 
+#postContainer{
+    padding: 15px 0;
+}
+
 .user-infor-posts img{
     display: block;
     margin-left: auto;
@@ -313,7 +317,7 @@ textarea{
 .reactions{
     display: flex;
     justify-content: space-between;
-    padding-top: 15px;
+    padding: 10px 0 29px 0;
 }
 
 .reaction-container{
@@ -347,9 +351,9 @@ textarea{
     display: block;
     margin: 0 auto;
     padding: 15px;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-   flex-direction: column;
+   flex-direction: column; */
 }
 
 .search-div{
@@ -363,9 +367,9 @@ input[type=search]{
     border: 1px solid #536471;
     border-radius: 24px;
     box-sizing: border-box;
-    background-image: url('assets/search-regular-36\ \(1\).png');
+    /* background-image: url('assets/search-regular-36\ \(1\).png');
     background-repeat: no-repeat;
-    background-position: 10px ;
+    background-position: 10px ; */
     line-height: 16px;
 }
 
